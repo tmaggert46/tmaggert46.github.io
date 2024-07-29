@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Initial Stats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Character Initital Stats</h1>
+    <p>This page is going to show you the intial stats of each character when they are recruited. Be aware that units recruited later in the game will have higher stats for being a higher level. The next page will allow you to compare the characters stats at given levels if you prefer to compare like leveled characters. </p>
+    <p>Note what the initial stats are when you recruit the characters. Looking at our main three characters, would you be able to tell what their build should be by looking at their initial stats?</p>
+    <label for="class-select">Choose a character:</label>
+    <select id="class-select">
+        <!-- Options added by script -->
+    </select>
+    
+
+    <div id="chart"></div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script3.js"></script>
+
+    <div class="button-container">
+        <button id="prev-button">Previous</button>
+        <button id="next-button">Next</button>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>  
+
+    <script>
+        document.getElementById("prev-button").addEventListener("click", function() {
+            window.location.href = "page2.html"; 
+        });
+
+        document.getElementById("next-button").addEventListener("click", function() {
+            window.location.href = "page4.html"; 
+        });
+    </script>
+</body>
+</html>
 
