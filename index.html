@@ -1,1 +1,70 @@
-"Hello Worldly" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Emblem Project - Introduction</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .content {
+            margin-bottom: 20px;
+        }
+        .toc {
+            list-style-type: none;
+            padding: 0;
+        }
+        .toc li {
+            margin-bottom: 10px;
+        }
+        .toc a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fire Emblem: Engage Character Building Narrative</h1>
+    <div class="content">
+        <p> This web page is designed to help you build a team of characters for competing in Fire Emblem: Engage. </p>
+        <p> To help process the information, we are going to follow three characters and see a potential build for each one. You will be able to try different characters and different classes as much as you like, but the content will focus on those three. </p>
+        <p> The builds of focus are:
+             Strength build, with Etie as a beserker. 
+             Magic build, with Veyle as a sage. 
+             Speed build, with Chloé as a griffin knight. </p>
+        <p></p>
+        <p> As we progress, visualize the development of a character build as a story progression. </p>
+    </div>
+
+    <h2>Table of Contents</h2>
+    <ul class="toc">
+        <li><a href="page1.html">Page 1: Class Stats</a> - Bar graph of character stats for each class.</li>
+        <li><a href="page2.html">Page 2: Character Growth Rates</a> - Bar graph of character growth rates.</li>
+        <li><a href="page3.html">Page 3: Character Initial Stats</a> - Bar graph comparing character initial stats. </li>
+        <li><a href="page4.html">Page 4: Character Level Approximations</a> - Dynamic bar graph that shows estimated stats per level per selected character. </li>
+        <li><a href="page5.html">Page 5: Class vs. Character Stats</a> - Scatterplot comparison of class and character stats.</li>
+        <li><a href="page6.html">Page 6: Dropdown Comparison</a> - Select characters and classes to compare their stats and create your team.</li>
+    </ul>
+
+    <script src="script.js"></script>
+
+    <button id="next-button">Next</button>
+    <script>
+        document.getElementById("next-button").addEventListener("click", function() {
+            window.location.href = "page1.html"; 
+        });
+    </script>
+</body>
+</html>
