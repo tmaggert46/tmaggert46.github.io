@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Character Stats Bar Graph</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+</head>
+<body>
+    <h1> Character By Level Stats</h1>
+    <p> This page allows you to seelct a character and scroll the bar to see what their stats would approximately be at a given level. </p>
+    <p> Note that each character cannot go lower than their initial level. This is mainly to see how each character would compare to others if they were the same level. </p>
+    <p> Look at our main three characters and check their stats at level 40. Do they seem to represent their builds well at max level?</p>
+    
+    <div>
+        <label for="class-select">Character: </label>
+        <select id="class-select">
+            <!-- Options added by script -->
+        </select>
+    </div>
+
+    <div>
+        <label for="levelSlider">Level: </label>
+        <input type="range" id="levelSlider" min="1" max="40" step="1">
+        <span id="levelDisplay">1</span>
+    </div>
+    
+    <div id="content">
+        <div id="bargraph" style="display: inline-block;"></div>
+        <div id="stat-sum-container">
+            <div>Sum of Stats:</div>
+            <div id="stat-sum">0</div>
+        </div>
+    </div>
+
+    <script src="script4.js"></script>
+
+    <div class="button-container">
+        <button id="prev-button">Previous</button>
+        <button id="next-button">Next</button>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>  
+
+    <script>
+        document.getElementById("prev-button").addEventListener("click", function() {
+            window.location.href = "page3.html"; 
+        });
+
+        document.getElementById("next-button").addEventListener("click", function() {
+            window.location.href = "page5.html"; 
+        });
+    </script>
+</body>
+</html>
 
