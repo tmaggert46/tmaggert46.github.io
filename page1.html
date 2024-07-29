@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Stats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Class Stats</h1>
+    <p>The first thing we need to do is be aware of what classes are available. For simplicity, we will focus only on their stat totals, and not their weapon availablity or special skills. </p>
+    <p>This page will allow you to select a class and see their max stats. Be sure to select each of the highlighted classes and make notes. The primary builds are Strength, Magic, Speed, Ranged, and Defense. Remember, a character can only level up their stats to the max that their class allows, so knowing what classes have high stat ceilings is the first step. What are the diffferences in max stats for each class and how would that support the build of choice for that class? </p>
+    <label for="class-select">Choose a class:</label>
+    <select id="class-select">
+        <!-- Options added by script -->
+    </select>
+
+    <div id="chart"></div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script1.js"></script>
+
+    <div class="button-container">
+        <button id="prev-button">Previous</button>
+        <button id="next-button">Next</button>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+
+    <script>
+        document.getElementById("prev-button").addEventListener("click", function() {
+            window.location.href = "index.html"; 
+        });
+
+        document.getElementById("next-button").addEventListener("click", function() {
+            window.location.href = "page2.html"; 
+        });
+    </script>
+</body>
+</html>
+
+
 
