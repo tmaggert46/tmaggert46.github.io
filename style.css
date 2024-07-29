@@ -1,1 +1,74 @@
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 20;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;
+    justify-content: center;*/
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+#chart {
+    margin-top: 20px;
+}
+
+#class-select {
+    width: 150px;
+}
+
+#character-select {
+    width: 150px;
+}
+
+.button-container {
+    text-align: left; /* Center the buttons horizontally */
+}
+
+#prev-button {
+    width: 70px;
+    display: inline-block;
+}
+
+#next-button {
+    width: 50px;
+    display: inline-block;
+}
+
+#scatterplot {
+    display: inline-block; /* Ensures that the scatterplot is inline */
+    vertical-align: top; /* Aligns it to the top */
+}
+
+#stat-sum-container {
+    border: 3px solid black;
+    padding: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-size: 24px;
+    width: 150px; /* Set width to ensure it has enough space for content */
+    height: 50px; /* Adjust height as needed */
+}
+
+#calc-container {
+    border: 3px solid black;
+    padding: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-size: 24px;
+}
+
+.highlighted-option {
+    font-weight: bold;
+    background-color: #ffeb3b; /* Yellow background */
+}
