@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Team</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        #dropdowns-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Spacing between rows */
+        }
+        
+        .dropdown-row {
+            display: flex;
+            gap: 20px; /* Spacing between columns */
+            align-items: center;
+        }
+        
+        .dropdown-row label {
+            min-width: 120px;
+        }
+        
+        .dropdown-row select {
+            min-width: 150px;
+        }
+
+        #fit-table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        #fit-table td, #fit-table th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+        #fit-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script6.js" defer></script>
+</head>
+<body>
+    <h1>Character and Class Comparison</h1>
+    <p> This page allows you to make numerous character/class comparisons and see their fitness displayed. You can use this to build a team that you are proud of. The fitness measure is the same as on the previous page, and the summed stats is for the characters at level 40. The summed stats won't change between classes since they are fixed to the character. </p>
+    <p> Let's take one last look at our three featured characters/classes(No longer highlighted since you will be picking many of your own). Pick a few other combinations to see if the options we made were the best ones. Did you see the process used to design a unit that is capable of playing on a strong team? </p>
+    <div id="dropdown-container">
+        <div class="dropdown-row">
+            <span style="width: 150px;">Character</span>
+            <span style="width: 130px;">Class</span>
+            <span style="width: 0px;"></span>Fitness</span>
+            <span>Total Stat Sum</span>
+        </div>
+        <!-- Rows of dropdowns will be added by script -->
+    </div>
+    
+    <div id="chart"></div>
+    
+    <p></p>
+
+    <button id="prev-button">Previous</button>
+    <button id="first-button">First</button>
+
+    <script>
+        document.getElementById("prev-button").addEventListener("click", function() {
+            window.location.href = "page5.html"; 
+        });
+
+        document.getElementById("first-button").addEventListener("click", function() {
+            window.location.href = "index.html"; 
+        });
+    </script>
+</body>
+</html>
 
