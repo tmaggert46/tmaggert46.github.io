@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Max Stats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Character Growth Rate(%)</h1>
+    <p>Next up is to select the characters you are interested in. The characters are in the dropdown in the same order they are introduced in the game. We have selected Etie, Veyle, and Chloé as our examples and they are highlighted in the dropdown. </p>
+    <p>Make notes about how their stat growth will compare to the builds we have selected for them. Which stats tend to be highest for each character and what stats do we need for our builds?</p>
+    <label for="class-select">Choose a character:</label>
+    <select id="class-select">
+        <!-- Options added by script -->
+    </select>
+    
+
+    <div id="chart"></div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script2.js"></script>
+
+    <div class="button-container">
+        <button id="prev-button">Previous</button>
+        <button id="next-button">Next</button>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>  
+
+    <script>
+        document.getElementById("prev-button").addEventListener("click", function() {
+            window.location.href = "page1.html"; 
+        });
+
+        document.getElementById("next-button").addEventListener("click", function() {
+            window.location.href = "page3.html"; 
+        });
+    </script>
+</body>
+</html>
 
