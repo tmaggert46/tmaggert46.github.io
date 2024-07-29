@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Stats With Classes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Character/Class Comparison</h1>
+    <p> This page will allow you to compare the different characters and classes to see how closely aligned the estimated max stats are for the character compared to the max stats for the class. A score is given that is calculated by finding the average distance from each stat point to the y=x line, which would represent perfect alignment. Note that this format allows characters with low growth rates to closely align with classes with low stat totals. Be sure that you are comprehending the score as an alignment score, not simply how strong that character/class combination is. </p>
+    <p> Look at our three featured characters and their respective classes. How closely aligned are they for their builds(Etie-Berserker/Veyle-Sage/Chloé-Griffin Knight)? </p>
+    <div class="button-container">
+        <label for="character-select">Choose a character:</label>
+        <select id="character-select">
+            <!-- Options added by script -->
+        </select>
+
+        <label for="class-select">Choose a class:</label>
+        <select id="class-select">
+            <!-- Options added by script -->
+        </select>
+    </div>
+
+    <div id="content">
+        <div id="scatterplot" style="display: inline-block;"></div>
+        <div id="calc-container">
+            <div>Character to Class Fitness</div>
+            <div>Smaller = Better</div>
+            <div id="fit-display">0</div>
+        </div>
+    </div>
+
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script5.js"></script>
+
+    <div class="button-container">
+        <button id="prev-button">Previous</button>
+        <button id="next-button">Next</button>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div> 
+
+    <script>
+        document.getElementById("prev-button").addEventListener("click", function() {
+            window.location.href = "page4.html"; 
+        });
+
+        document.getElementById("next-button").addEventListener("click", function() {
+            window.location.href = "page6.html"; 
+        });
+    </script>
+</body>
+</html>
 
